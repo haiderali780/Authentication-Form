@@ -40,8 +40,8 @@ const Login = (props) => {
     isValid: null,
   });
 
-  const {isValid:emailValid}=emailState;
-  const {isValid:passwordValid}=emailState;
+  const { isValid: emailValid } = emailState;
+  const { isValid: passwordValid } = emailState;
 
   // useEffect(() => {
   //   console.log("EFFECT RUNNING");
@@ -51,18 +51,16 @@ const Login = (props) => {
   //   };
   // }, []);
 
-   useEffect(() => {
-     const identifier = setTimeout(() => {
-       console.log('Checking form validity!');
-       setFormIsValid(
-        emailValid && passwordValid
-       );
-     }, 500)
-     return () => {
-       console.log('CLEANUP');
-       clearTimeout(identifier);
-     };
-   }, [emailValid,passwordValid]);
+  useEffect(() => {
+    const identifier = setTimeout(() => {
+      console.log("Checking form validity!");
+      setFormIsValid(emailValid && passwordValid);
+    }, 500);
+    return () => {
+      console.log("CLEANUP");
+      clearTimeout(identifier);
+    };
+  }, [emailValid, passwordValid]);
 
   const emailChangeHandler = (event) => {
     dispatchEmail({ type: "USER_INPUT", val: event.target.value });
@@ -74,7 +72,7 @@ const Login = (props) => {
 
   const passwordChangeHandler = (event) => {
     dispatchpassword({ type: "USER_INPUT", val: event.target.value });
-   // setFormIsValid(emailState.isValid && event.target.value.trim().length > 6);
+    // setFormIsValid(emailState.isValid && event.target.value.trim().length > 6);
   };
 
   const validateEmailHandler = () => {
@@ -109,7 +107,7 @@ const Login = (props) => {
         </div>
         <div
           className={`${classes.control} ${
-            passwordState.isValid  === false ? classes.invalid : ""
+            passwordState.isValid === false ? classes.invalid : ""
           }`}
         >
           <label htmlFor="password">Password</label>

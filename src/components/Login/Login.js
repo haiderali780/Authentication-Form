@@ -41,7 +41,7 @@ const Login = (props) => {
   });
 
   const { isValid: emailValid } = emailState;
-  const { isValid: passwordValid } = emailState;
+  const { isValid: passwordValid } = passwordState;
 
   // useEffect(() => {
   //   console.log("EFFECT RUNNING");

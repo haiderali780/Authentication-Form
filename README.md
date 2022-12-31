@@ -12,8 +12,8 @@ This is a dummy login form built with React that demonstrates the use of local s
 
 ## How to use
 1. Clone the repository and navigate to the directory:
-**git clone https://github.com/haiderali780/dummy-login-form.git**
-**cd dummy-login-form**
+- **git clone https://github.com/haiderali780/dummy-login-form.git**
+- **cd dummy-login-form**
 2. Install the dependencies:
 **npm install**
 3. Start the development server:

@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+#Dummy Login Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a dummy login form built with React that demonstrates the use of local storage, the useReducer hook, the React Context API, side effects, forwardRef, useImperativeHandle, and the useEffect hook.
 
-## Available Scripts
+##Features
+- **Local storage**: The login form saves the user's email and password to local storage when the user logs in, so that the user doesn't have to re-enter their credentials on subsequent visits to the site.
+- `useReducer hook`: The login form uses the useReducer hook to manage the state of the email and password input fields. This allows for more complex state management without the need for Redux.
+- **React Context API**: The login form uses the React Context API to pass data and functions down to child components without the need for props drilling.
+- **Side effects**: The login form uses the useEffect hook to check the validity of the email and password inputs every 500ms. If both inputs are valid, the form becomes submitable. The useEffect hook is also used to clear the timeout when the component is unmounted.
+- `forwardRef`: The login form uses the forwardRef function to pass a ref to a child component.
+- `useImperativeHandler()`: The login form uses the useImperativeHandle hook to expose a child component's methods to the parent component.
 
-In the project directory, you can run:
+##How to use
+1. Clone the repository and navigate to the directory:
+**git clone https://github.com/haiderali780/dummy-login-form.git**
+**cd dummy-login-form**
+2. Install the dependencies:
+**npm install**
+3. Start the development server:
+**npm start**
+4. The login form will be available at **http://localhost:3000**.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##License
+This project is not licensed.

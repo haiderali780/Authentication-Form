@@ -1,4 +1,5 @@
-# Dummy Login Form
+# Authentication-Form
+
 
 This is a dummy login form built with React that demonstrates the use of local storage, the useReducer hook, the React Context API, side effects, forwardRef, useImperativeHandle, and the useEffect hook.
 
@@ -19,6 +20,14 @@ This is a dummy login form built with React that demonstrates the use of local s
 3. Start the development server:
 **npm start**
 4. The login form will be available at **http://localhost:3000**.
+## Contributions
+
+If you'd like to contribute to the **Authentication-Form**, please `fork` the repository and create a `pull request` with your changes.
+
+
+
+## Support
+If you have any questions , please contact me at **haiderali782002@gmail.com**
 
 ## License
 This project is not licensed.

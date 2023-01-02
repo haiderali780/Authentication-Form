@@ -22,7 +22,7 @@ This is a dummy login form built with React that demonstrates the use of local s
 4. The login form will be available at **http://localhost:3000**.
 ## Contributions
 
-If you'd like to contribute to the **Authentication-Form**, please `fork` the repository and create a `pull request` with your changes.
+If you'd like to **contribute** to the **Authentication-Form**, please `fork` the repository and create a `pull request` with your changes.
 
 
 
